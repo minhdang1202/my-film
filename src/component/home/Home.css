@@ -1,0 +1,137 @@
+.phim{
+    padding: 50px 0 70px;
+    text-align: center;
+    background-color: var(--body-color);
+    position: relative;
+}
+.phim>h1{
+    font-size: 35px;
+    color: var(--text-color-while-2);
+}
+.phim>span{
+    color: var(--text-color-while-4);
+    font-size: 20px;
+}
+.phim-container{
+    margin-top: 60px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.film-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 40px;
+    
+}
+.film-data>img{
+    height: 330px;
+    width: 225px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.film-data>h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    text-align: center;
+    width: 190px;
+    color: var(--text-color-while-4);
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 30px;
+    font-weight: 900;
+}
+.swiper-button-prev, .swiper-button-next{
+    width: 0;
+    color: var(--text-color-button);
+    top : 43%;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: var(--text-color-button-1)
+}
+.phim-container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+@media screen and (max-width:1024px){
+    .phim-container{
+        column-gap: 0.5rem;
+        width: 768px;
+    }
+    .film-data>img{
+        height: 280px;
+        width: 180px;
+    }
+    .film-data>h3{
+        font-size: 18px;
+        width: 170px;
+    }
+}
+@media screen and (max-width:769px){
+    .phim-container{
+        grid-template-columns: repeat(3,33.33%);
+        overflow: hidden;
+        max-width: 736px;
+    }
+    .phim>h1 {
+        font-size: 30px;
+    }
+    .phim {
+        padding: 32px 0 11px;
+    }
+}
+@media screen and (max-width:414px){
+    .phim {
+        padding: 24px 0 8px;
+    }
+    .phim>h1 {
+        font-size: 25px;
+    }
+    .phim>span {
+        font-size: 17px;
+    }
+    .phim-container {
+        grid-template-columns: repeat(2,50%);
+        max-width: 375px;
+        margin-top: 30px;
+    }
+    .film-data>img {
+        height: 260px;
+        width: 165px;
+    }
+}
+@media screen and (max-width:375px){
+    .phim {
+        padding: 18px 0 6px;
+    }
+    .phim>h1 {
+        font-size: 22px;
+    }
+    .phim>span {
+        font-size: 15px;
+    }
+    .phim-container {
+        max-width: 300px;
+        margin-top: 20px;
+        /* overflow: inherit; */
+        column-gap: 0;
+    }
+    .film-data>img {
+        height: 218px;
+        width: 140px;
+    }
+    .film-data>h3 {
+        font-size: 15px;
+        width: 135px;
+    }
+}
+
+  

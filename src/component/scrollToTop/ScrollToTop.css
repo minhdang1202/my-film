@@ -1,0 +1,99 @@
+.scroll-to-top{
+    position: fixed;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--button-color);
+    color: var(--text-color-while-1);
+    text-align: center;
+    cursor: pointer;
+    animation : hideScroll 0.5s ease-in-out forwards; 
+    z-index: 12;
+}
+.scroll-to-top>i{
+    margin-top: 10.5px;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes hideScroll {
+    from{
+        bottom: 60px;
+        opacity: 0;
+    }
+    to{
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+@keyframes scrollTop {
+    from{
+        transform: translateY(3px);
+    }
+    to{
+        transform: translateY(-2px);
+    }
+}
+
+.scroll-to-top.visiable{
+    animation : visiableScroll 0.5s ease-in-out forwards; 
+}
+@keyframes visiableScroll {
+    from{
+        bottom: 20px;
+        opacity: 1;
+    }
+    to{
+        
+        bottom: 60px;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .scroll-to-top {
+        right: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    @keyframes hideScroll {
+        from{
+            bottom: 100px;
+            opacity: 0;
+        }
+        to{
+            bottom: 60px;
+            opacity: 1;
+        }
+    }
+    @keyframes visiableScroll {
+        from{
+            bottom: 60px;
+            opacity: 1;
+        }
+        to{
+            
+            bottom: 100px;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scrollTop {
+        from{
+            transform: translateY(-8px);
+        }
+        to{
+            transform: translateY(-3px);
+        }
+    }
+    
+}
+@media screen and (max-width : 414px){
+    .scroll-to-top {
+        right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .scroll-to-top>i{
+        font-size: 13px;
+    }
+}

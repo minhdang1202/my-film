@@ -1,0 +1,91 @@
+.pagination{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.page-item{
+    padding: 10px;
+    border: 1px solid rgb(175, 52, 52);
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.page-item:hover{
+    background-color: skyblue;
+}
+.page-item:hover button{
+    color: var(--text-color-black-2);
+
+}
+.page-link{
+    text-decoration: none;
+    font-size: 20px;
+}
+.page-item:hover .page-link{
+    color: var(--text-color-black-2);
+}
+.page-item.active{
+    background-color: brown;
+}
+.page-item.active .page-link{
+    color: var(--text-color-while-2);
+}
+.pagination li button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-while-2);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.point-item{
+    padding: 10px;
+    border : none;
+    margin-right: 5px;
+    color: var(--text-color-while-2);
+    margin-top: 8px;
+}
+.point-item.active{
+    display: none;
+}
+.phimmoi{
+    padding: 96px 0 32px;
+    background-color: var(--body-color);
+}
+
+@media screen and (max-width:768px){
+    .pagination li button {
+        font-size: 1rem;
+    }
+    .page-link {
+        font-size: 15px;
+    }
+    .page-item {
+        height: 40px;
+    }
+    .page-item:focus{
+        background-color: skyblue;
+    }
+    .page-item:hover{
+        background-color: var(--body-color) ;
+    }
+    .page-item:hover button{
+        color: var(--text-color-while-2);
+    
+    }
+}
+@media screen and (max-width:414px){
+    .point-item {
+        padding: 5px;
+        font-size: 15px;
+    }
+    .pagination li button {
+        font-size: 0.9rem;
+    }
+    .page-item {
+        height: 30px;
+    }
+    .page-item {
+        padding: 5px;
+    }
+    
+}

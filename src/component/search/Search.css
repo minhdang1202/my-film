@@ -1,0 +1,28 @@
+.search{
+    background-color: var(--body-color);
+    padding: 96px 0 32px;
+}
+.no-result{
+    color: var(--text-color-while-2);
+    margin: 30px;
+}
+.no-result.not-active{
+    display: none;
+}
+@media screen and (max-width:769px){
+    .search.active {
+        position: absolute;
+        bottom: 170px;
+    }
+    .search {
+        padding: 15px 0 15px;
+    }
+}
+@media screen and (max-width: 769px){
+    .search {
+        padding: 0;
+    }
+    .search.active {
+        bottom: 120px;
+    }
+}

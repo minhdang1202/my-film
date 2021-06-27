@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+:root {
+    --title-color : #fff;
+    --text-color : #000;
+    --text-color-black-1 : rgba(1, 1, 1, 0.2);
+    --text-color-black-2 : rgba(0,0,0,0.8);
+    --body-color : rgb(2, 18, 53);
+    --text-color-while-1: rgba(255, 255, 255, 0.9);
+    --text-color-while-2: rgba(255, 255, 255, 1);
+    --text-color-while-4: rgba(255, 255, 255, 0.8);
+    --text-color-while-3: rgba(255, 255, 255, 0.5);
+    --text-color-red-1 : red; 
+    --text-color-1 : rgb(66, 124, 11); 
+    --text-color-2 : tomato;
+    --body-color-1 : rgb(7, 27, 46);
+    --body-color-2 : rgb(0, 42, 82);
+    --text-color-3 : rgb(13, 11, 168);
+    --text-color-button : rgb(24, 129, 228);
+    --text-color-button-1: rgb(34, 10, 247);
+    --button-color :rgb(43, 78, 233);
+}
+.theme-light{
+    --title-color : #fff;
+    --text-color : #000;
+    --text-color-black-1 : rgba(255, 255, 255, 0.2);
+    --text-color-black-2 : rgba(255,255,255,0.8);
+    --body-color : rgb(255, 255, 255);
+    --text-color-while-1: rgba(0, 0, 0, 0.9);
+    --text-color-while-2: rgba(0, 0, 0, 1);
+    --text-color-while-4: rgba(0, 0, 0, 0.8);   
+    --text-color-while-3: rgba(0, 0, 0, 0.5);
+    --text-color-red-1 : red; 
+    --text-color-1 : rgb(66, 124, 11); 
+    --text-color-2 : tomato;
+    --body-color-1 : rgb(208, 221, 233);
+    --body-color-2 : rgb(164, 171, 179);
+    --text-color-3 : rgb(13, 11, 168);
+    --text-color-button : rgb(24, 129, 228);
+    --text-color-button-1: rgb(34, 10, 247);
+    --button-color :rgb(178, 189, 240);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html {
+    scroll-behavior: smooth;
 }
