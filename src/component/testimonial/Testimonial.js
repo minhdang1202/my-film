@@ -13,7 +13,7 @@ const Testimonial = () => {
             <SwiperSlide key={`slide-${i}`} tag='li' className = 'testimonial-content'>
                     <div className = 'testimonial-data'>
                         <div className = 'testimonial-header'>
-                            <img src = {`../image/expert${i}.jpg`}></img>
+                            <img src = {`image/expert${i}.jpg`}></img>
                             <div className = 'testimonial-info'>
                                 <h3>Ronaldo</h3>
                                 <p>Client</p>
