@@ -42,7 +42,7 @@
 }
 .nav-item {
     margin-left: 30px;
-    
+    cursor: pointer;
 }
 .nav-item a{
     color: var(--text-color-while-2);
