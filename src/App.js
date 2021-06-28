@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import {HashRouter as Router,Switch,Route} from "react-router-dom";
 import './App.css';
 import { Navbar } from './component/navbar/Navbar';
 import { Footer } from './component/footer/Footer';
@@ -7,7 +7,7 @@ import { Home_main } from './component/home-main/Home_main';
 import Contact from './component/contact/Contact';
 import Testimonial from './component/testimonial/Testimonial';
 import Home from './component/home/Home';
-import Film from './film/Film';
+import Film from './component/film/Film';
 import Phimle from './component/home/Phimle';
 import Phimbo from './component/home/Phimbo';
 import Phimhoathinh from './component/home/Phimhoathinh';
