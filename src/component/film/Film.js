@@ -4,9 +4,9 @@ import FilmDetail from './FilmDetail';
 const Film = (props) => {
     
     return (
-        <section>
+        <>
             <Route path = '/film/:name' component = {FilmDetail}/>       
-        </section>
+        </>
     )
 }
 
