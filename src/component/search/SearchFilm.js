@@ -23,13 +23,13 @@ const SearchFilm = (props) => {
     
 
 
-    var Phimle = fetch('../assets/phimle.json')
+    var Phimle = fetch('assets/phimle.json')
             .then(reponse => reponse.json());
-    var Phimbo = fetch('../assets/phimbo.json')
+    var Phimbo = fetch('assets/phimbo.json')
             .then(reponse => reponse.json());
-    var Phimchieurap = fetch('../assets/phimchieurap.json')
+    var Phimchieurap = fetch('assets/phimchieurap.json')
             .then(reponse => reponse.json());
-    var Phimhoathinh = fetch('../assets/phimhoathinh.json')
+    var Phimhoathinh = fetch('assets/phimhoathinh.json')
             .then(reponse => reponse.json());
 
     useEffect(() => {
@@ -126,7 +126,7 @@ const SearchFilm = (props) => {
             <span>Mới cập nhật</span>
             <h2 className = {!checkResult?'no-result':'no-result not-active'} >KHÔNG CÓ KẾT QUẢ NÀO</h2>
             {renderData(currentPosts)}
-            <Pagis postsPerPage={postsPerPage} totalsPosts={data.length} paginate = {paginate} currentPage = {currentPage} name = {`/timkiem/${nameSearch}`}/>
+            <Pagis postsPerPage={postsPerPage} totalsPosts={data.length} paginate = {paginate} currentPage = {currentPage} name = {`%PUBLIC_URL%/timkiem/${nameSearch}`}/>
         </section>
     )
     
