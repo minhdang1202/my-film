@@ -18,13 +18,13 @@ const FilmDetail = (props) => {
                 <h3>{film.title}</h3>
             </a>
     }
-    var Phimle = fetch('../assets/phimle.json')
+    var Phimle = fetch('assets/phimle.json')
             .then(reponse => reponse.json());
-    var Phimbo = fetch('../assets/phimbo.json')
+    var Phimbo = fetch('assets/phimbo.json')
             .then(reponse => reponse.json());
-    var Phimchieurap = fetch('../assets/phimchieurap.json')
+    var Phimchieurap = fetch('assets/phimchieurap.json')
             .then(reponse => reponse.json());
-    var Phimhoathinh = fetch('../assets/phimhoathinh.json')
+    var Phimhoathinh = fetch('assets/phimhoathinh.json')
             .then(reponse => reponse.json());
 
     var phim = Phimle;
