@@ -5,7 +5,7 @@ const Film = (props) => {
     
     return (
         <>
-            <Route path = 'my-film/#/film/:name' component = {FilmDetail}/>       
+            <Route path = '/film/:name' component = {FilmDetail}/>       
         </>
     )
 }
