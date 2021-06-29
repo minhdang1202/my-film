@@ -32,7 +32,7 @@ export const Navbar = () => {
           let text = e.target.value;
           if(!text || text.trim() ==='') return;
           console.log(text);
-          window.location = `/timkiem/${text}`;
+          window.location = `/my-film/#/timkiem/${text}`;
           e.target.value = '';
           handleNavItem();
         }
