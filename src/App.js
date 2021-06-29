@@ -15,12 +15,9 @@ import Phimchieurap from './component/home/Phimchieurap';
 import ScrollTop from './component/home/ScrollTop';
 import ScrollToTop from './component/scrollToTop/ScrollToTop';
 import Search from './component/search/Search';
-import { createBrowserHistory } from "history";
-
-const history = createBrowserHistory(); 
 function App() {
   return (
-    <Router history={history}>
+    <Router>
       <ScrollTop/>
       <Navbar/>
       <ScrollToTop/>
