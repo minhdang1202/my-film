@@ -20,18 +20,23 @@ export const Navbar = () => {
     };
 
     const [clickSearch,setclickSearch] = useState(false);
-    const handleClickSearch = () => setclickSearch(!clickSearch);
+
+    const handleClickSearch = () => {
+        document.getElementsByClassName('search-input')[0].value = ''
+        setclickSearch(!clickSearch);
+        
+    }
 
     window.addEventListener('scroll', function(){
         const navbar = this.document.querySelector('.navbar');
         navbar.classList.toggle('sticky' , window.scrollY > 0);
     })
 
+    
     const onKeyUp = (e) => {
         if(e.keyCode ===13){
           let text = e.target.value;
           if(!text || text.trim() ==='') return;
-          console.log(text);
           window.location = `/my-film/#/timkiem/${text}`;
           e.target.value = '';
           handleNavItem();
@@ -92,7 +97,7 @@ export const Navbar = () => {
                             </li>
                     </ul>
             </nav>
-            <div className = {((clickSearch && click)) ? 'search active' : 'search'}>
+            <div className = {((clickSearch && click) || (clickSearch && window.innerWidth >= 769)) ? 'search active' : 'search'}>
                 <i className="fas fa-search"></i>
                 <input type = 'text' name='search-name' placeholder='Enter for searching .....' className = 'search-input' onKeyUp ={onKeyUp} />
             </div>
