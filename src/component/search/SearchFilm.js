@@ -13,7 +13,7 @@ const SearchFilm = (props) => {
     var listFilm = [];
     
     const createFilm = (film , theloai , index) => {
-        return <Link to = {`/my-film/#/film/${theloai}&${film.title}&${index}`} className = 'film-data'>
+        return <Link to = {`/film/${theloai}&${film.title}&${index}`} className = 'film-data'>
                 <img src = {film.imageUrl}></img>
                 <h3>{film.title}</h3>
             </Link>
