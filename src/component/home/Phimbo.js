@@ -4,7 +4,7 @@ import Pagination from '../pagination/Pagination'
 const Phimbo = () => {
     return (
         <div>
-            <Route path={`${process.env.PUBLIC_URL}/:name`} component = {Pagination} />
+            <Route path='/:name' component = {Pagination} />
         </div>
     )
 }
