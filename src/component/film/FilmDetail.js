@@ -13,7 +13,7 @@ const FilmDetail = (props) => {
     const [sliders,setSliders] = useState([]);
     const [episode, setEpisode] = useState([]);
     const createFilm = (film , theloai , index) => {
-        return <a href = {`my-film/#/film/${theloai}&${film.title}&${index}`} className = 'film-data'>
+        return <a href = {`/my-film/#/film/${theloai}&${film.title}&${index}`} className = 'film-data'>
                 <img src = {film.imageUrl} alt = {film.title}></img>
                 <h3>{film.title}</h3>
             </a>
