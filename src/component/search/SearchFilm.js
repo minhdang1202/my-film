@@ -126,7 +126,8 @@ const SearchFilm = (props) => {
             <span>Mới cập nhật</span>
             <h2 className = {!checkResult?'no-result':'no-result not-active'} >KHÔNG CÓ KẾT QUẢ NÀO</h2>
             {renderData(currentPosts)}
-            <Pagis postsPerPage={postsPerPage} totalsPosts={data.length} paginate = {paginate} currentPage = {currentPage} name = {`/timkiem/${nameSearch}`}/>
+            <Pagis postsPerPage={postsPerPage} totalsPosts={data.length} paginate = {paginate} currentPage = {currentPage}
+             name = {`/my-film/#/timkiem/${nameSearch}`}/>
         </section>
     )
     
