@@ -5,7 +5,7 @@ import SearchFilm from './SearchFilm'
 const Search = (props) => {
    return (
         <>
-            <Route path='my-film/timkiem/:name' component = {SearchFilm} />
+            <Route path='/timkiem/:name' component = {SearchFilm} />
         </>
     )
 }
